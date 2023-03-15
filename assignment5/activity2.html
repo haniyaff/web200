@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Activity2</title>
+</head>
+<body>
+    <h1>Activity 2 - Conditions</h1>
+    <p>Create a program that asks the user how old they are in years.
+         Then ask the user if they would like to know how old they are in (M)onths, (D)ays, (H)ours, or (S)econds. 
+         Use if/else conditional statements to display their approximate age in the selected timeframe. 
+         Do not perform any unnecessary calculations.</p>
+   
+         <p>How old you are in years?</p> 
+<input type="text" name="input1" id="input1">
+
+<p>How would like to know your age in ?</p>
+<select name="age" id="ddlViewBy" required>
+    <option value="">Please Choose an option</option>
+    <option value="months">Months</option>
+    <option value="days">Days</option>
+    <option value="hours">Hours</option>
+    <option value="seconds">Seconds</option>
+  </select>
+
+<br> <br>
+<button id="myBtn" type="button" name="button">Results</button>
+ 
+<p>Your age in <span id="span" style="text-decoration: underline;"></span> is below:</p>
+<p style = "color: blue; font-weight: bolder; " id="calculatedAge"></p>
+
+    <script src="activity2.js"></script>
+    <noscript>Sorry, your browser does not support JavaScript.</noscript>
+</body>
+</html>
